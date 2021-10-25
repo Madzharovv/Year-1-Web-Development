@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheCleaningCompany</title>
+<!-- local css-->
+<link rel="stylesheet" href="./typography.css">
+<link rel="stylesheet" href="./index.css">
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<!-- Link icon's buttons CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet">
+</head>
+<body>
+    <div class="site-contact-page">
+        <header class="site-header">
+
+
+
+            <div id="nav-container" class="nav-container">
+                <h1 class="Company-name-nav">
+                    The Cleaning Company
+                </h1>
+                <nav class="navigation">
+
+                    <ul>
+                        <li><a href="Page1.html">Home</a></li>
+                        <li><a href="Page2.html">About us</a></li>
+                        <li><a href="Page3.html">Contact us</a></li>
+                    </ul>
+
+                </nav>
+
+            </div>
+            <section class="hero-section">
+                <div class="hero-image-register-page">
+
+
+
+
+
+
+
+
+
+                </div>
+                <h2 class="cssanimation typing sequence">Register</h2>
+                
+            </section>
+        </header>
+
+<main class="register-page-container">
+    <form method="post" action="#">
+        <div class="container-Register-page">
+            <h3>Register</h3>
+            <p>Please fill in this form to create an account:</p>
+            <hr>
+
+            <label for="username"><b>Username</b></label>
+            <input type="text" placeholder="Enter username" name="username" id="username" maxlength="20" required>
+
+            <label for="firstname"><b>First name</b></label>
+            <input type="text" placeholder="Enter your first name" name="firstname" maxlength="30" id="firstname" required>
+
+            <label for="lastname"><b>Last name</b></label>
+            <input type="text" placeholder="Enter your last name" name="lastname" maxlength="30" id="lastname" required>
+            
+            <label for="dob"><b>Date of birth</b></label>
+            <input type="date" id="dob" name="dob" value="2000-01-01" min="1900-01-01" max="2015-01-01" required><br>
+            
+            <label for="phone"><b>Mobile phone number</b></label>
+            <input type="number" placeholder="Enter your mobile phone number" name="phone"  maxlength="11" id="phone" required>
+            
+            <label for="gender"><b>Gender</b></label><br>
+            <label for="man" class="gender"><input type="radio" id="man" name="gender" value="man">Man</label><br>
+            <label for="man" class="gender"> <input type="radio" id="woman" name="gender" value="woman">Woman</label><br>
+            <label for="other" class="gender"><input type="radio" id="other" name="gender" value="other">Other</label><br>
+            <label for="pns" class="gender"> <input type="radio" id="pns" name="gender" value="pns">Prefer not to say</label><br>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter email" name="email" id="email"  maxlength="40" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter password" name="psw" id="psw" maxlength="20" required>
+
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat password" name="psw-repeat" id="psw-repeat"  maxlength="20" required>
+            
+            <label for="media"><b>Where did you hear about us?</b></label>
+            <select id="media" name="media">
+                <option value="facebook">Facebook</option>
+                <option value="google">Google</option>
+                <option value="instagram">Instagram</option>
+                <option value="instagram">Twitter</option>
+                <option value="other">Other</option>
+            </select>
+            <hr>
+            
+            <label for="tac"><input type="checkbox" id="tac" name="tac" value="tac">By creating an account you agree to our <a href="#">Terms & Privacy</a></label>
+
+            <br><button type="submit" class="registerbtn">Register</button>
+            <div class="container-signin">
+                <p>Already have an account? <a href="Page3.html">Sign in</a>.</p>
+            </div>
+        </div>
+
+       
+    </form>
+</main>
+
+<footer>
+
+    <div class="container-footer">
+        <div class="Head-Office">
+        <h5 class="head-Office-title"> Our head office is located at: </h5>
+           <p class="Address-footer-text"> Primrose Road</p>
+           <p class="Address-footer-text">Leyton</p>
+           <p class="Address-footer-text">London</p>
+           <p class="Address-footer-text">E10 5ED</p>
+           <p class="Address-footer-text">_______________________</p>
+           
+           <p class="Address-footer-text">Phone number:</p>
+           <p class="Address-footer-text">0330 311 2609</p>
+           <p class="Address-footer-text">Hours:</p>
+           <p class="Address-footer-text">Mon-Friday(9AM-6PM)</p>
+       </div>    
+
+
+
+
+       <div class="Extra-Information">
+           <h5 class ="info-title">Useful information</h5>
+               <ul>
+                   <li><a href = "About.html">Terms & Conditions</a></li> 
+                   <li><a href = "About.html">Client Handbook</a></li> 
+                   <li><a href = "About.html">Cleaner Instruction</a></li> 
+                   <li><a href = "About.html">Cleaner Handbook</a></li> 
+                   <li><a href = "About.html">Workers Earning</a></li> 
+                   <li><a href = "About.html">Cleaner Schedule</a></li> 
+                   <li><a href = "About.html">COVID-19 Updates</a></li> 
+               </ul>
+       </div>
+
+
+
+
+        <div class ="footer-icons">
+           <h5 class="icons-title">Platforms you can find us on:</h5>
+           <div class="icons-wrapper">
+           <a href="#" class="fa fa-facebook"></a>
+           <a href="#" class="fa fa-twitter"></a>
+           <a href="#" class="fa fa-instagram"></a>
+           <a href="#" class="fa fa-google"></a>
+           </div>
+       </div>
+      
+
+   </div>
+
+
+
+
+   </footer>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="./swiper.js"></script>
+<script src="./app.js"></script>
+</div>
+</body>
+</html>

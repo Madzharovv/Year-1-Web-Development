@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheCleaningCompany</title>
+<!-- local css-->
+<link rel="stylesheet" href="./css/index.css">
+<link rel="stylesheet" href="./css/typography.css">
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<!-- Link icon's buttons CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet">
+</head>
+<body>
+    <div class="site-contact-page">
+        <header class="site-header">
+
+
+            <!--Title and Logo-->
+            <div id="nav-container" class= "nav-container">  
+                <div class="logo-container">
+                    <h1 class="Company-name-nav">
+                        <img src="./images/LOGO.png" height="37px"  >
+                     </h1>
+                     <h1 class="Company-name-nav">
+                     The Cleaning Company
+                     </h1>
+                </div>
+                
+                <nav class="navigation">
+                    <!--navbar-->
+                    <ul>
+                        <li><a href="Page1.html">Home</a></li>
+                        <li><a href="Page2.html">About us</a></li>
+                        <li><a href="Page3.html">Contact us</a></li>
+                    </ul>
+
+                </nav>
+
+            </div>
+             <!--hero image -->
+            <section class="hero-section">
+                <div class="hero-image-register-page">
+
+
+
+
+
+
+
+
+
+                </div>
+                <!--Title: A CSS Animation Library for Developers and Ninjas (typing animation)
+                    Author: Created and maintained by: Pavel
+                    Date: 15/03/2021
+                    Code version: Unknown  
+                    Availability: http://cssanimation.io/-->
+
+
+                <!--I used the code and eddited it in order to match the color theme of the website and I
+                     changed the animation time in the css in order to make it more suitable.
+                     Additionlly I changed the width of the animation to make it more fitting for all pages  -->
+
+                <!--page quote-->
+                <h2 class="cssanimation typing sequence">Register</h2>
+              
+            </section>
+        </header>
+
+<main class="register-page-container">
+   <!-- https://moodle.city.ac.uk/mod/folder/view.php?id=1809322-->
+
+   <!--register form-->
+    <form method="post" action="register.php">
+        <div class="container-Register-page">
+            <h3>Register</h3>
+            <p>Please fill in this form to create an account:</p>
+            <hr> 
+
+            <label for="username"><b>Username</b></label>
+            <input type="text" placeholder="Enter username" name="username" id="username" minlength="5" maxlength="15"  title="Your username must be between 5 and 15 characters " required>
+       
+            <label for="firstname"><b>First name</b></label>
+            <input type="text" placeholder="Enter your first name" name="firstname" maxlength="30" id="firstname" pattern="^[A-Z]+[a-z]+$" title="Only letters  can be inputted in this field " required>
+
+            <label for="lastname"><b>Last name</b></label>
+            <input type="text" placeholder="Enter your last name" name="lastname" maxlength="30" id="lastname"  pattern="^[A-Z]+[a-z]+$" title="Only letters  can be inputted in this field required>
+            
+            <label for="dob"><b>Date of birth</b></label>
+            <input type="date" id="dob" name="dob" value="2000-01-01" min="1900-01-01" max="2015-01-01" required><br>
+            
+            <label for="phone"><b> Phone number</b></label>
+            <input type="number" placeholder="Enter your mobile phone number" name="phone"  maxlength="11"   pattern="^\d{4}-\d{3}-\d{4}$"id="phone" title="Your phone number must contain 11 numbers." required>
+      
+
+            <label for="emial"><b>Email</b></label>
+            <input type="text" placeholder="Enter email" name="email" id="email"  maxlength="40" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter password" name="psw" id="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Your password must have more than 8 characters, lowercase letter, upper case letter and no special symbols." required>
+            
+            
+
+
+
+            <label class="where" for="socialMedia"><b>Where did you hear about us? </b></label>
+            <select id="socialMedia" name="socialMedia">
+                <option value="facebook">Facebook</option>
+                <option value="google">Google</option>
+                <option value="instagram">Instagram</option>
+                <option value="twitter">Twitter</option>
+                <option value="other">Other</option>
+            </select>
+            
+
+            <br><button type="submit" class="registerbtn" >Register</button>
+            <div class="container-signin">
+                <p>Already have an account? <a href="Page3.html">Sign in</a>.</p>
+            </div>
+        </div>
+
+       
+    </form>
+</main>
+
+<footer>
+    <!--footer grid-->
+    <div class="container-footer">
+        <!--headoffice and contact information-->
+        <div class="Head-Office">
+            <h5 class="head-Office-title"> Our head office is located at: </h5>
+            <address>
+            <p class="Address-footer-text"> Northampton Square</p>
+            <p class="Address-footer-text">Clerkwell</p>
+            <p class="Address-footer-text">London</p>
+            <p class="Address-footer-text">EC1V 0HB</p>
+           </address>
+            <p class="Address-footer-text">_______________________</p>
+            <p class="Address-footer-text"><b>Phone number:</b></p>
+            <p class="Address-footer-text">0330 311 2609</p>
+            <p class="Address-footer-text"><b>Hours:</b></p>
+            <p class="Address-footer-text">Mon-Friday(9AM-6PM)</p>
+            <p class="Address-footer-text"><b>Email:</b></p>
+            <p class="Address-footer-text">tcccity798@gmail.com</p>
+        </div>
+
+
+
+
+        <!--useful information hyperlinks-->
+        <div class="Extra-Information">
+            <h5 class="info-title">Useful information</h5>
+            <ul>
+                <li><a
+                        href="https://www.gov.uk/coronavirus?utm_campaign=coronavirus_grants&utm_medium=paid_searchl&utm_source=google&utm_content=keyword">COVID-19
+                        Updates</a></li>
+                <li><a
+                        href="https://www.gov.uk/government/publications/covid-19-decontamination-in-non-healthcare-settings/covid-19-decontamination-in-non-healthcare-settings">COVID-19:cleaning
+                        in non-healthcare settings</a></li>
+                <li><a
+                        href="https://www.gov.uk/guidance/working-safely-during-coronavirus-covid-19/homes#national-lockdown">COVID-19
+                        Working safely during coronavirus</a></li>
+                <li><a href="https://www.gov.uk/government/publications/covid-19-response-spring-2021">COVID-19
+                        Response - Spring 2021 (Roadmap)</a></li>
+            </ul>
+
+        </div>
+
+
+
+          <!--Title: How TO - Social Media Buttons
+                Author:   W3Schools.com
+                Date: 15/03/2021
+                Code version: Unknown  
+                Availability:https://www.w3schools.com/howto/howto_css_social_media_buttons.asp -->
+
+            <!--I used the code for the social media buttons and I changed the border radius to make
+                 the edges of the buttons smoother and I changed the colors too, to macth the theme of the website-->
+
+            <!--social media icons-->
+        <div class="footer-icons">
+            <h5 class="icons-title">Platforms you can find us on:</h5>
+            <div class="icons-wrapper">
+                <a href="https://www.facebook.com/The-Cleaning-Company-101732075359651/?ref=page_internal"
+                    class="fa fa-facebook"></a>
+                <a href="https://twitter.com/thecleaningcom2/media" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/thecleaningcompanyofficial/" class="fa fa-instagram"></a>
+
+            </div>
+            <P class="extra-info-text">DISCLAIMER:The Cleaning Company is a fictitious brand created solely
+                for the purpose of the
+                assessment of IN1010 module at City, University of London, UK. All products and
+                people associated with The Cleaning Company are also fictitious. Any resemblance to real
+                brands, products, or people is purely coincidental. Information provided about the
+                product is also fictitious and should not be construed to be representative of actual
+                products on the market in a similar product category</P>
+        </div>
+
+
+    </div>
+
+
+
+
+</footer>
+   <!--JavaScript-->
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+   <script src="./js/time-pick.js"></script>
+   <script src="./js/app.js"></script>
+   <script src="./js/swiper.js"></script>
+   
+</div>
+</body>
+</html>

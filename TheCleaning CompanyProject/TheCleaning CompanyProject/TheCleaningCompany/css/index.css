@@ -1,0 +1,1069 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.site {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+
+
+}
+
+.site-header {
+    min-height: 100vh;
+
+}
+
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/heropage.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.hero-image-about-us-page {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/heropage1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.hero-image-contact-us-page {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/heropage2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.hero-image-register-page {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/heropage3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+}
+.hero-image-booking-page {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/heropage4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.site-header .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /*puts the navbar on top of all other contents as it brings the nav bar all the way to  the front */
+    z-index: 1000;
+
+
+}
+
+.site-header .nav-container:before,
+.site-header .nav-container:after {
+    display: block;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background: rgb(247, 120, 74);
+    transition: width 1.2s linear;
+    /*I figured this out by myself in college when I was studying css trasitions and I remmeber I was looking at the following sources  at the time;
+    /*
+
+Title:CSS ::before Selector
+Author: w3shools
+Date: 15/03/2021
+Availability:https://www.w3schools.com/cssref/sel_before.asp  
+
+Title:CSS ::before Selector
+Author: w3shools
+Date: 15/03/2021
+Availability:https://www.w3schools.com/css/css3_transitions.asp 
+
+Title:CSS ::before Selector
+Author: w3shools
+Date: 15/03/2021
+Availability:https://www.w3schools.com/jsref/event_onscroll.asp 
+     */
+     
+  
+    
+}
+  /*this css creates a animation which starts when the page is scrolled passed the 100 point*/
+    /*the animation is a border aperaing from each side of the page and it comes together in the middle*/
+
+.site-header .nav-container:before {
+    left: 0;
+}
+
+.site-header .nav-container:after {
+    right: 0;
+}
+
+.site-header .nav-container.scrolled {
+    background: rgb(0, 0, 0);
+}
+
+
+.site-header .nav-container.scrolled:before,
+.site-header .nav-container.scrolled:after {
+    width: 50%;
+}
+
+
+
+
+.site .site-header .nav-container .Company-name-nav {
+    color: rgb(247, 120, 74);
+    text-align: center;
+    text-decoration: none;
+}
+
+.logo-container{
+    display: flex;
+}
+
+.navigation ul {
+
+    display: flex;
+}
+
+
+.navigation ul li {
+
+    list-style: none outside;
+    padding: 0.6em 1.2em;
+
+}
+
+
+.navigation a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+
+    display: flex;
+}
+
+.nav-container.scrolled .navigation a {
+    color: rgb(247, 120, 74);
+}
+
+
+
+.navigation ul li:hover a {
+    color: rgb(247, 120, 74)
+}
+
+.nav-container.scrolled .navigation ul li:hover a {
+    color: rgb(255, 255, 255);
+}
+
+
+/*Title: A CSS Animation Library for Developers and Ninjas (typing animation)
+Author: Created and maintained by: Pavel
+Date: 15/03/2021
+Code version: Unknown  
+Availability: http://cssanimation.io/*/
+
+
+/*I used the code and eddited it in order to match the color theme of the website and I
+changed the animation time in the css in order to make it more suitable.
+Additionlly I changed the width of the animation to make it more fitting for all pages icnluding mobile too*/
+
+.cssanimation, .cssanimation span {
+    animation-duration: 3s;
+    animation-fill-mode: both;
+}
+
+.cssanimation span { display: inline-block }
+
+.cssanimation {
+    font-weight: 3rem;
+    line-height: 1.1;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2.5em;
+
+}
+.typing {
+    width: 45%;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #ffffff;
+    animation: typing 4s steps(15, end), cursor .5s steps(12, end) infinite;
+}
+@keyframes typing {
+    from { width: 0 }
+}
+@keyframes cursor {
+    50% { border-color: transparent }
+}
+
+
+
+
+
+
+
+
+
+/* home page */
+
+.hero-section {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.site-description-container {
+    padding: 2em 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(247, 120, 74, 0.256);
+
+
+
+}
+
+.site-description-container-about-us-page {
+    padding: 1em 0em 0em 0em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+
+
+
+}
+
+
+.description-title {
+
+    color: rgb(0, 0, 0);
+    padding-bottom: 2em;
+text-align: center;
+    font-style: italic;
+}
+
+
+
+.site-description-container .description-home-page {
+    color: rgb(0, 0, 0);
+    width: 60vw;
+    padding-bottom: 5em;
+    padding-top: 1em;
+    text-align: center;
+
+
+
+
+}
+
+
+.site-main .services-container {
+
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.site-main .services-container .description-title {
+    color: rgb(0, 0, 0);
+
+}
+
+
+
+.site-main .services-container .services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5em;
+
+
+}
+
+.cleaning:hover {
+    box-shadow: 0px 19px 28px 7px rgba(0, 0, 0, 0.62);
+
+}
+
+
+.site-main .services-container .services .cleaning-title {
+    color: rgb(255, 255, 255);
+    margin-bottom: 1.5em;
+
+    text-decoration: underline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+.site-main .services-container .services .cleaning {
+
+    background: rgb(247, 120, 74);
+    color: rgb(255, 255, 255);
+    border-radius: 0.3em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+.site-main .services-container .services .cleaning img {
+    margin-bottom: 1.5em;
+
+}
+
+.site-main .services-container .services .cleaning p {
+
+    padding-bottom: 0;
+
+
+}
+
+/*
+Title:Effect Cube
+Author: Vladimir Kharlampidi
+Date: 15/03/2021
+Code version: 4th commit to github
+Availability: https://github.com/nolimits4web/Swiper/blob/master/demos/230-effect-cube.html-->
+I reused the cube swiper code and the only thing I changed apart from implementing it in my
+website was the size of the cube and I changed the shadow size of the cube to make it suitable.*/
+
+.swiper-container {
+    width: 700px;
+    height: 700px;
+    margin-bottom: 30rem;
+
+}
+
+.swiper-container .swiper-title {
+    text-align: center;
+    color: rgb(247, 120, 74);
+
+    padding: 4em;
+}
+
+
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+
+
+footer {
+
+    text-align: left;
+    display: flex;
+    padding: 1em;
+    background-color: rgb(26, 25, 25);
+    justify-content: center;
+
+
+
+}
+
+footer .container-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+
+.Head-Office {
+    margin-bottom: 0.5rem;
+    padding-right: 5em;
+    padding-left: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+
+
+}
+
+.head-Office-title {
+
+    color: rgb(247, 120, 74);
+    margin-bottom: 1em;
+}
+
+.Address-footer-text {
+    color: rgb(247, 120, 74);
+}
+
+
+.Extra-Information {
+    margin: 1em;
+
+}
+
+.extra-info-text{
+    color: rgb(247, 120, 74);
+    margin-top: 0.5em;
+    font-size: 10px;
+}
+.container-footer.Extra-Information {
+
+    margin-right: 6em;
+}
+
+.Extra-Information .info-title {
+    color: rgb(247, 120, 74);
+    padding-bottom: 1.5em;
+    text-align: left;
+    
+}
+
+.container-footer .Extra-Information ul li a {
+
+    color: rgb(247, 120, 74);
+
+    list-style: none;
+
+
+}
+
+
+
+/*Title: How TO - Social Media Buttons
+Author:   W3Schools.com
+Date: 15/03/2021
+Code version: Unknown  
+Availability:https://www.w3schools.com/howto/howto_css_social_media_buttons.asp 
+
+I used the code for the social media buttons and I changed the border radius to make
+ the edges of the buttons smoother and I changed the colors too, to macth the theme of the website*/
+
+/*social media buttons*/
+.footer-icons {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+
+.icons-title {
+    margin-bottom: 0.5rem;
+    color: rgb(247, 120, 74);
+    padding-bottom: 1em;
+}
+
+
+.fa {
+    padding: 20px;
+    margin: 10px;
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+
+.fa-facebook {
+    background: rgb(247, 120, 74);
+    color: white;
+    border-radius: 0.5em;
+    width: 15px;
+    text-align: center;
+}
+
+
+.fa-twitter {
+    background: rgb(247, 120, 74);
+    color: white;
+    border-radius: 0.5em;
+    width: 15px;
+    text-align: center;
+}
+
+.fa-instagram {
+    background: rgb(247, 120, 74);
+    color: white;
+    border-radius: 0.5em;
+    width: 15px;
+    text-align: center;
+}
+
+.fa-google {
+    background: rgb(247, 120, 74);
+    color: white;
+    border-radius: 0.5em;
+    width: 15px;
+    text-align: center;
+}
+
+.container .Extra-Information ol li {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+/* About us page  */
+
+
+
+.site-description-container-about-us-page .description {
+    color: rgb(0, 0, 0);
+    padding-top: 2.5em;
+    padding-bottom: 0.5em;
+    width: 60%;
+    text-align: left;
+
+    margin-bottom: 15em
+}
+
+.site-description-container-about-us-page h3 {
+
+    color: rgb(247, 120, 74);
+
+
+
+    border-bottom: solid rgb(247, 120, 74);
+    text-align: left;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+
+
+.site-description-container-about-us-page .cleaning-header {
+
+    color: rgb(247, 120, 74);
+
+
+    font-style: italic;
+    border-bottom: solid rgb(247, 120, 74);
+    text-align: center;
+    margin-bottom: 0.5em;
+
+}
+
+
+.site-description-container-about-us-page .cleaning-description {
+
+    color: rgb(0, 0, 0);
+    padding-top: 2.5em;
+    padding-bottom: 0.5em;
+    width: 60%;
+    text-align: left;
+
+    margin-bottom: 3em;
+}
+
+
+/*
+
+Title:Effect Coverflow
+Author: Vladimir Kharlampidi
+Date: 15/03/2021
+Code version: 5th commit to github
+Availability:https://github.com/nolimits4web/Swiper/blob/master/demos/240-effect-coverflow.html
+
+I reused the coverflow swiper code and the only thing I changed apart from implementing it in my
+website was the width and hieght of the swiper.
+*/
+
+.swiper-about-us-page {
+    max-height: auto;
+    margin: 6em;
+}
+
+.swiper-about-us-page .swiper-container-about-us-page {
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 60vw;
+    margin-bottom: 15em;
+    overflow: hidden;
+}
+
+.swiper-about-us-page .swiper-container-about-us-page .swiper-slide {
+
+    width: 700px;
+    height: 700px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* contact us page  */
+
+.site-contact-page {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.site-contact-page .site-header .nav-container .Company-name-nav {
+    color: rgb(247, 120, 74);
+    text-align: center;
+    text-decoration: none;
+
+
+}
+
+.contact-page-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.contact-page-description .description-title {
+
+    color: rgb(247, 120, 74);
+    padding: 2em;
+
+    font-style: italic;
+}
+
+
+
+.contact-page-description .description-contact-page-container {
+    color: rgb(0, 0, 0);
+    text-align: left;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 1em;
+    margin: 1em;
+
+
+}
+
+
+
+
+.contact-page-description .description-contact-page-container .booking-container {
+
+    margin-bottom: 2.5em;
+
+}
+.contact-page-description .description-contact-page-container .contact-us {
+    padding: 2em;
+    margin:2em 0 ;
+    display: flex;
+    flex-direction: column;
+    border: rgb(247, 120, 74)3px;
+    border-style: dotted;
+
+}
+
+.contact-page-description .description-contact-page-container .contact-us .contact-header {
+
+
+    text-align: left;
+    text-decoration: underline;
+}
+
+
+.contact-page-description .description-contact-page-container .contact-us .contact-details {
+
+
+    text-align: left;
+}
+
+input[type=text],
+input[type=password],
+input[type=date],
+input[type=number],
+select
+{
+    width: 55%;
+    padding: 10px;
+    margin: 10px 22px;
+    display: flex;
+    border: solid black 2px;
+    border-radius: 1em;
+    box-shadow: black;
+    background: #f1f1f1;
+}
+
+
+.registerbtn, .loginbtn, .Submitbtn {
+    background-color:rgb(247, 120, 74);
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    opacity: 0.9;
+    border-radius: 1em;
+    margin-left: 1.5em;
+
+}
+.registerbtn:hover, .loginbtn:hover {
+    opacity: 1.5;
+}
+
+.login-form{
+    padding-left: 1em;
+}
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.container-Register-page{
+    padding: 3em;
+    margin:  3em;
+}
+.container-Contact-page{padding-left:4em ;}
+
+
+ .hints{
+     padding-left:  2em;
+     margin-bottom: 1em;
+ }
+
+.booking-container{
+    margin-left:5em ;
+    margin-top: 5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*booking page*/
+
+.bookingtitle{
+    margin-bottom: 2em;
+    margin-left:22px
+}
+
+/*Title: Simple Time Picker In Pure Javascript CSS – Free Code Download  
+Author:   By W.S. Toh 
+Date: December 27, 2020
+Code version: Unknown  
+Availability: https://code-boxx.com/simple-time-picker-javascript-css/
+
+I used the time picker code and I eddited it by changeing the colors to match 
+the theme of the website and I also slightly resized the input boxes for the pop up time selector as they were too small */
+
+/*time picker*/
+
+#tp-pop {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+  }
+  #tp-pop.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* (B) TIME PICKER ITSELF */
+  .tp {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+    background: #fff;
+    border: 1px solid #eee;
+  }
+  .tp-box > *::selection {
+    background: transparent;
+  }
+  #tp-pop .tp {
+    margin: 50vh auto 0 auto;
+    transform: translateY(-50%);
+  }
+  
+  /* (C) HR + MIN + AM/PM */
+  .tp-box {
+    width: 33%;
+    padding: 15px;
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .tp-up, .tp-down {
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(247, 120, 74);
+    padding: 10px 0;
+    cursor: pointer;
+  }
+  .tp-val {
+    box-sizing: border-box;
+    width: 100%;
+    background: #f2f2f2;
+    border: 1px solid #eee;
+    padding: 5px;
+    text-align: center;
+    font-size: 22px;
+  }
+  
+  /* (D) OK BUTTON */
+  .tp-ok {
+    width: 100%;
+    background: rgb(247, 120, 74);
+    color: rgb(255, 255, 255);
+    border: 0;
+    padding: 15px 0;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+
+label{
+    margin:5px 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media query for devices with max screen width 480px*/
+/*in the first place I created it for devices for screen
+ size smaller than 1023px however due to the coursework 
+ requirement i changed it to 480px */
+@media only screen and (max-width: 480px) {
+
+    .site-header .nav-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em;
+        background: transparent;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+    
+    
+    }
+    .logo-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .navigation ul {
+
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .navigation a {
+        color: white;
+        
+        text-decoration: none;
+    
+    }
+    .site .site-header .nav-container .Company-name-nav {
+        color: rgb(247, 120, 74);
+        text-align: center;
+        text-decoration: none;
+        font-size: 23px ;
+        margin: 1em;
+    }
+    .cssanimation {
+        font-weight: 3rem;
+        line-height: 1.1;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        width: 65%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 20px;
+    
+    }
+    
+    .site-main .services-container .services {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1.5em;
+    
+    
+    }
+    .swiper-container {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 30rem;
+    
+    }
+
+    .swiper-about-us-page .swiper-container-about-us-page .swiper-slide {
+
+        width: 300px;
+        height: 300px;
+    
+    
+    
+    }
+
+input[type=text],
+input[type=password],
+input[type=date],
+input[type=number],
+select
+{
+    width: 50%;
+    padding: 15px;
+    margin: 5px  22px ;
+    display: flex;
+    border: none;
+    background: #f1f1f1;
+font-size: 10px;
+
+}
+    
+footer .container-footer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2em;
+    width: 100%;
+    height: 100%;
+
+
+}
+.extra-info-text{
+    color: rgb(247, 120, 74);
+    margin-top: 0.5em;
+    font-size: 7px;
+
+}
+.contact-page-description .description-contact-page-container {
+    
+    width: 90%;
+
+}
+
+}
