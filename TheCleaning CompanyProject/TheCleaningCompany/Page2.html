@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TheCleaningCompany</title>
     <!-- local css-->
-    <link rel="stylesheet" href="./typography.css">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./css/typography.css">
+    <link rel="stylesheet" href="./css/index.css">
 
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -24,22 +24,29 @@
         <header class="site-header">
 
 
-
-            <div id="nav-container" class="nav-container">
-                <h1 class="Company-name-nav">
-                    The Cleaning Company
-                </h1>
+            <!--Title and Logo-->
+            <div id="nav-container" class= "nav-container">  
+                <div class="logo-container">
+                    <h1 class="Company-name-nav">
+                        <img src="./images/LOGO.png" height="37px"  >
+                     </h1>
+                     <h1 class="Company-name-nav">
+                     The Cleaning Company
+                     </h1>
+                </div>
                 <nav class="navigation">
-
+                    <!--navbar-->
                     <ul>
                         <li><a href="Page1.html">Home</a></li>
                         <li><a href="Page2.html">About us</a></li>
                         <li><a href="Page3.html">Contact us</a></li>
+                       
                     </ul>
 
                 </nav>
 
             </div>
+            <!--hero image -->
             <section class="hero-section">
                 <div class="hero-image-about-us-page">
 
@@ -52,8 +59,22 @@
 
 
                 </div>
-                <h2 class="cssanimation typing sequence">Services we provide</h2>
+                <!--Title: A CSS Animation Library for Developers and Ninjas (typing animation)
+                Author: Created and maintained by: Pavel
+                Date: 15/03/2021
+                Code version: Unknown  
+                Availability: http://cssanimation.io/-->
 
+
+
+
+                <!--I used the code and eddited it in order to match the color theme of the website and I
+                     changed the animation time in the css in order to make it more suitable.
+                     Additionlly I changed the width of the animation to make it more fitting for all pages  -->
+
+                <!--page quote-->
+                <h2 class="cssanimation typing sequence">Services we provide</h2>
+                  
             </section>
         </header>
 
@@ -65,8 +86,9 @@
 
             <div class="site-description-container-about-us-page">
 
-
+                <!--cleaning service title-->
                 <h2 class="cleaning-header"> Domestic Cleaning</h2>
+                <!--cleaning service description-->
                 <p class="cleaning-description"> We are passionate about domestic cleaning and providing a reliable
                     service. As a family-owned
                     independent business, we understand the value of family and spending time with each other. The
@@ -84,30 +106,83 @@
 
 
 
-                <!-- Swiper -->
+            <!--Title:Effect Coverflow
+                Author: Vladimir Kharlampidi
+                Date: 15/03/2021
+                Code version: 5th commit to github
+                Availability:https://github.com/nolimits4web/Swiper/blob/master/demos/240-effect-coverflow.html-->
+
+            <!--I reused the coverflow swiper code and the only thing I changed apart from implementing it in my
+                     website was the width and hieght of the swiper.-->
+
+                <!-- Coverflow Swiper -->
                 <div class="swiper-about-us-page">
                     <div class="swiper-container-about-us-page">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide"
-                                style="background-image:url(https://ksassets.timeincuk.net/wp/uploads/sites/56/2017/10/RT_IH66_1-1.jpg)">
-                            </div>
-                            <div class="swiper-slide"
-                                style="background-image:url(https://cdn.home-designing.com/wp-content/uploads/2015/05/white-interior.png)">
-                            </div>
-                            <div class="swiper-slide"
-                                style="background-image:url(https://www.dumpsters.com/images/spring-cleaning-living-room.jpg)">
-                            </div>
-                            <div class="swiper-slide" style="background-image:url(https://i.redd.it/ju3br2zvjl231.jpg)">
-                            </div>
-                            <div class="swiper-slide"
-                                style="background-image:url(https://drranheim.com/wp-content/uploads/2019/02/Clean-Bedroom.jpg)">
-                            </div>
-                            <div class="swiper-slide"
-                                style="background-image:url(https://cdn.shopify.com/s/files/1/0064/8049/4659/articles/Bedroom-Deep-Clean-Blog-Main-Image-opt_1515x.jpg?v=1583443320)">
-                            </div>
-                            <div class="swiper-slide"
-                                style="background-image:url(https://media1.popsugar-assets.com/files/thumbor/_c7xZUUvN_NS1ygV4G7kJCv45do/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2014/02/27/391/n/1922441/ba951c801a610cbb_shutterstock_88505542.jpg)">
-                            </div>
+                            <div class="swiper-slide" style="background-image:url(./images/livingroom1.jpg)"></div>
+                            <!--Author:Photo by Alex Qian from Pexels
+                                Availability:https://www.pexels.com/photo/round-tufted-gray-ottoman-2343465/
+                            -->
+                            <div class="swiper-slide" style="background-image:url(./images/livingroom2.jpg)"></div>
+                             <!--Author:Photo by Max Vakhtbovych from Pexels
+                                Availability:https://www.pexels.com/photo/spacious-living-room-with-modern-furniture-5998135/
+                            -->
+                            <div class="swiper-slide" style="background-image:url(./images/livingroom3.jpg)"></div>
+                             <!--Author:Photo by Max Vakhtbovych from Pexels
+                                Availability:https://www.pexels.com/photo/spacious-living-room-with-kitchen-6143348/
+                            -->
+                            <div class="swiper-slide" style="background-image:url(./images/kitchen1.jpg)"></div>
+                             <!--Author:Photo by Curtis Adams from Pexels
+                                Availability:https://www.pexels.com/photo/photo-of-white-kitchen-4682110/
+                            -->
+                            <div class="swiper-slide" style="background-image:url(./images/kitchen2.png)"></div>
+                             <!--Author:Photo by Alex Qian from Pexels
+                                Availability:https://www.pexels.com/photo/round-tufted-gray-ottoman-2343465/
+                            -->
+                            <div class="swiper-slide" style="background-image:url(./images/kitchen3.jpg)"></div>
+                             <!--Author:Photo by Curtis Adams from Pexels
+                                Availability:https://www.pexels.com/photo/round-tufted-gray-ottoman-2343465/
+                            -->
+                            <div class="swiper-slide" style="background-image:url(./images/bedroom1.jpg)"></div>
+                             <!--Author:Photo by Max Vakhtbovych from Pexels from Pexels
+                                Availability:https://www.pexels.com/photo/modern-bedroom-interior-with-decorative-panel-and-tv-set-6394709/
+                            -->
+                            <div class="swiper-slide" style="background-image:url(./images/bedroom2.jpg)"></div>
+                             <!--Author:Photo by Max Vakhtbovych from Pexels
+                                Availability:https://www.pexels.com/photo/bedroom-interior-with-tv-set-and-decor-under-shiny-lamps-6434589/
+                            -->
+                            <div class="swiper-slide" style="background-image:url(./images/bedroom3.jpg)"></div>
+                             <!--Author:Photo by Jean van der Meulen from Pexels
+                                Availability:https://www.pexels.com/photo/photo-of-bedroom-1454806/
+                            -->
+                            <div class="swiper-slide" style="background-image:url(./images/bedroom4.jpg)"></div>
+                             <!--Author:Photo by Curtis Adams from Pexels
+                                Availability:https://www.pexels.com/photo/brown-wooden-bed-inside-bedroom-3773575/
+                            -->
+                            <div class="swiper-slide" style="background-image:url(./images/cleanhome1.jpg)"></div>
+                             <!--Author:Photo by Curtis Adams from Pexels
+                                Availability:https://www.pexels.com/photo/leather-couch-beside-lampshade-3773570/
+                            -->
+                            <div class="swiper-slide" style="background-image:url(./images/cleanhome2.jpg)"></div>
+                             <!--Author:Photo by Rene Asmussen from Pexels
+                                Availability:https://www.pexels.com/photo/interior-of-modern-apartment-with-windows-4180974/
+                            -->
+                            <div class="swiper-slide" style="background-image:url(./images/cleanhome3.jpg)"></div>
+                             <!--Author:Photo by Max Vakhtbovych from Pexels
+                                Availability:https://www.pexels.com/photo/bright-living-room-interior-in-modern-apartment-6186821/
+                            -->
+                            <div class="swiper-slide" style="background-image:url(./images/cleanhome4.jpg)"></div>
+                             <!--Author:Photo by Max Vakhtbovych from Pexels
+                                Availability:https://www.pexels.com/photo/bright-modern-house-interior-with-furniture-6238614/
+                            -->
+                            <div class="swiper-slide" style="background-image:url(./images/cleanhome5.jpg)"></div>
+                             <!--Author:Photo by Max Vakhtbovych from Pexels
+                                Availability:https://www.pexels.com/photo/modern-bright-house-interior-with-furniture-6238679/
+                            -->
+                            <div class="swiper-slide" style="background-image:url(./images/cleanhome6.jpg)"></div>
+                             <!--Author:Photo by Max Vakhtbovych from Pexels
+                                Availability:https://www.pexels.com/photo/stylish-design-of-living-room-with-couch-and-dining-zone-6312358/
+                            -->
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
@@ -136,8 +211,9 @@
                     </script>
                 </div>
 
-
+                <!--cleaning service title-->
                 <h2 class="cleaning-header"> Office Cleaning </h2>
+                <!--cleaning service description-->
                 <p1 class="cleaning-description">Office cleaning gives a good first impression to your customers and
                     visitors, as well as enhancing your
                     staff’s physical and emotional wellbeing. Reducing allergens, dust, and mould makes your team
@@ -152,36 +228,48 @@
                     can stay healthy and concentrate on their work.</p1>
 
 
+                <!--Title:Effect Coverflow
+                    Author: Vladimir Kharlampidi
+                    Date: 15/03/2021
+                    Code version: 5th commit to github
+                    Availability:https://github.com/nolimits4web/Swiper/blob/master/demos/240-effect-coverflow.html-->
 
-
-                <!-- Swiper -->
+                <!--I reused the coverflow swiper code and the only thing I changed apart from implementing it in my
+                    website was the width and hieght of the swiper.-->
+                <!--Coverflow Swiper -->
+             
                 <div class="swiper-about-us-page">
                     <div class="swiper-container-about-us-page">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide"
-                                style="background-image:url(https://mcjanitorial.com/wp-content/uploads/2019/03/clean-office-space.jpg)">
-                            </div>
-                            <div class="swiper-slide"
-                                style="background-image:url(https://sweepandscrub.com.au/wp-content/uploads/2020/06/CLEANOFFICE.jpg)">
-                            </div>
-                            <div class="swiper-slide"
-                                style="background-image:url(https://gogreencleaning.info/wp-content/uploads/2019/06/HOW-TO-CLEAN-A-COMPANY-OFFICE.jpg)">
-                            </div>
-                            <div class="swiper-slide"
-                                style="background-image:url(https://www.teucerled.co.uk/wp-content/uploads/2016/05/Meeting-room1-1.jpg)">
-                            </div>
-                            <div class="swiper-slide"
-                                style="background-image:url(https://thedo.osteopathic.org/wp-content/uploads/2015/02/2014-05-waiting-room.jpg)">
-                            </div>
-                            <div class="swiper-slide"
-                                style="background-image:url(https://cdn.wallpaper.com/main/styles/fp_922x565/s3/fd0bcbb1-82ea-4430-9750-4927739b0515.gif)">
-                            </div>
-
-                        </div>
+                            <div class="swiper-slide" style="background-image:url(./images/cleanoffice1.jpg)"></div>
+                            <!--Author:Photo by Pixabay from Pexels
+                               Availability:https://www.pexels.com/photo/brown-wooden-desk-263209/
+                           -->
+                           <div class="swiper-slide" style="background-image:url(./images/cleanoffice2.jpg)"></div>
+                            <!--Author:Photo by Dayvison de Oliveira Silva from Pexels
+                               Availability:https://www.pexels.com/photo/interior-of-stylish-conference-room-with-modern-furniture-5696239/
+                           -->
+                           <div class="swiper-slide" style="background-image:url(./images/cleanoffice3.jpg)"></div>
+                            <!--Author:Photo by Diana from Pexels
+                               Availability:https://www.pexels.com/photo/contemporary-spacious-open-space-office-in-glass-building-4444989/
+                           -->
+                           <div class="swiper-slide" style="background-image:url(./images/cleanoffice4.jpg)"></div>
+                            <!--Author:Photo by  Pixabay from Pexels
+                               Availability: https://www.pexels.com/photo/gray-wooden-computer-cubicles-inside-room-267507/
+                           -->
+                           <div class="swiper-slide" style="background-image:url(./images/cleanoffice5.jpg)"></div>
+                           <!--Author:Photo by  Huseyn Kamaladdin from Pexels
+                              Availability: https://www.pexels.com/photo/brown-wooden-desk-with-rolling-chair-and-shelves-near-window-667838/
+                          -->
+                          <div class="swiper-slide" style="background-image:url(./images/cleanoffice6.jpg)"></div>
+                          <!--Author:Photo by  Jonathan Borba from Pexels
+                             Availability: https://www.pexels.com/photo/turned-on-black-flat-screen-monitor-on-white-wooden-table-and-chairs-3316924/
+                         -->
+                           </div>
                         <div class="swiper-pagination"></div>
                     </div>
 
-                    <!-- Swiper JS -->
+                    <!-- Coverflow Swiper JS -->
                     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
                     <!-- Initialize Swiper -->
@@ -212,49 +300,76 @@
 
 
             <footer>
-
+                <!--footer grid-->
                 <div class="container-footer">
+                    <!--headoffice and contact information-->
                     <div class="Head-Office">
                         <h5 class="head-Office-title"> Our head office is located at: </h5>
-                        <p class="Address-footer-text"> Primrose Road</p>
-                        <p class="Address-footer-text">Leyton</p>
+                        <address>
+                        <p class="Address-footer-text"> Northampton Square</p>
+                        <p class="Address-footer-text">Clerkwell</p>
                         <p class="Address-footer-text">London</p>
-                        <p class="Address-footer-text">E10 5ED</p>
+                        <p class="Address-footer-text">EC1V 0HB</p>
+                       </address>
                         <p class="Address-footer-text">_______________________</p>
-
-                        <p class="Address-footer-text">Phone number:</p>
+                        <p class="Address-footer-text"><b>Phone number:</b></p>
                         <p class="Address-footer-text">0330 311 2609</p>
-                        <p class="Address-footer-text">Hours:</p>
+                        <p class="Address-footer-text"><b>Hours:</b></p>
                         <p class="Address-footer-text">Mon-Friday(9AM-6PM)</p>
+                        <p class="Address-footer-text"><b>Email:</b></p>
+                        <p class="Address-footer-text">tcccity798@gmail.com</p>
                     </div>
 
 
 
 
+                    <!--useful information hyperlinks-->
                     <div class="Extra-Information">
                         <h5 class="info-title">Useful information</h5>
                         <ul>
-                            <li><a href="About.html">Terms & Conditions</a></li>
-                            <li><a href="About.html">Client Handbook</a></li>
-                            <li><a href="About.html">Cleaner Instruction</a></li>
-                            <li><a href="About.html">Cleaner Handbook</a></li>
-                            <li><a href="About.html">Workers Earning</a></li>
-                            <li><a href="About.html">Cleaner Schedule</a></li>
-                            <li><a href="About.html">COVID-19 Updates</a></li>
+                            <li><a
+                                    href="https://www.gov.uk/coronavirus?utm_campaign=coronavirus_grants&utm_medium=paid_searchl&utm_source=google&utm_content=keyword">COVID-19
+                                    Updates</a></li>
+                            <li><a
+                                    href="https://www.gov.uk/government/publications/covid-19-decontamination-in-non-healthcare-settings/covid-19-decontamination-in-non-healthcare-settings">COVID-19:cleaning
+                                    in non-healthcare settings</a></li>
+                            <li><a
+                                    href="https://www.gov.uk/guidance/working-safely-during-coronavirus-covid-19/homes#national-lockdown">COVID-19
+                                    Working safely during coronavirus</a></li>
+                            <li><a href="https://www.gov.uk/government/publications/covid-19-response-spring-2021">COVID-19
+                                    Response - Spring 2021 (Roadmap)</a></li>
                         </ul>
+
                     </div>
 
 
 
+                    <!--Title: How TO - Social Media Buttons
+                        Author:   W3Schools.com
+                        Date: 15/03/2021
+                        Code version: Unknown  
+                        Availability:https://www.w3schools.com/howto/howto_css_social_media_buttons.asp -->
 
+                    <!--I used the code for the social media buttons and I changed the border radius to make
+                        the edges of the buttons smoother and I changed the colors too, to macth the theme of the website-->
+
+                    <!--social media icons-->
                     <div class="footer-icons">
                         <h5 class="icons-title">Platforms you can find us on:</h5>
                         <div class="icons-wrapper">
-                            <a href="#" class="fa fa-facebook"></a>
-                            <a href="#" class="fa fa-twitter"></a>
-                            <a href="#" class="fa fa-instagram"></a>
-                            <a href="#" class="fa fa-google"></a>
+                            <a href="https://www.facebook.com/The-Cleaning-Company-101732075359651/?ref=page_internal"
+                                class="fa fa-facebook"></a>
+                            <a href="https://twitter.com/thecleaningcom2/media" class="fa fa-twitter"></a>
+                            <a href="https://www.instagram.com/thecleaningcompanyofficial/" class="fa fa-instagram"></a>
+
                         </div>
+                        <P class="extra-info-text">DISCLAIMER:The Cleaning Company is a fictitious brand created solely
+                            for the purpose of the
+                            assessment of IN1010 module at City, University of London, UK. All products and
+                            people associated with The Cleaning Company are also fictitious. Any resemblance to real
+                            brands, products, or people is purely coincidental. Information provided about the
+                            product is also fictitious and should not be construed to be representative of actual
+                            products on the market in a similar product category</P>
                     </div>
 
 
@@ -265,8 +380,10 @@
 
             </footer>
             <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-            <script src="./swiper.js"></script>
-            <script src="./app.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+            <script src="./js/time-pick.js"></script>
+            <script src="./js/app.js"></script>
+            <script src="./js/swiper.js"></script>
 </body>
 
 </div>

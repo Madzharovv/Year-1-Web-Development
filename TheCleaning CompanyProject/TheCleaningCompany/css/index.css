@@ -384,17 +384,19 @@ I reused the cube swiper code and the only thing I changed apart from implementi
 website was the size of the cube and I changed the shadow size of the cube to make it suitable.*/
 
 .swiper-container {
-    width: 700px;
+    width: 50%;
     height: 700px;
     margin-bottom: 30rem;
+    padding-left: 25%;
+
 
 }
 
 .swiper-container .swiper-title {
     text-align: center;
     color: rgb(247, 120, 74);
-
-    padding: 4em;
+    width: 50%;
+    padding: 25%;
 }
 
 
@@ -402,7 +404,7 @@ website was the size of the cube and I changed the shadow size of the cube to ma
 .swiper-slide {
     background-position: center;
     background-size: cover;
-
+    width: 50%;
 }
 
 
@@ -652,6 +654,21 @@ website was the width and hieght of the swiper.
     height: 700px;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1002,15 +1019,6 @@ label{
         width: 300px;
         height: 300px;
         margin-bottom: 30rem;
-    }
-        .swiper-container {
-            width: 700px;
-            height: 700px;
-            margin-bottom: 30rem;
-            text-align: center;
-            align-items: center;
-        
-        }
     
     }
 
@@ -1060,3 +1068,4 @@ footer .container-footer {
 
 }
 
+}
